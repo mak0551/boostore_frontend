@@ -11,7 +11,7 @@ function DeleteBook() {
   const deleteBook = () => {
     setLoading(true);
     axios
-      .delete(`http://localhost:3000/api/v1/books/${id}`, {
+      .delete(`https://bookstore-backend-t7gr.onrender.com/api/v1/books/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }, // Add token here
       })
       .then(() => {

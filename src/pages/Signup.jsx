@@ -19,7 +19,7 @@ function Signup() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:3000/api/v1/users/signup",
+        "https://bookstore-backend-t7gr.onrender.com/api/v1/users/signup",
         {
           method: "POST",
           headers: {

@@ -49,7 +49,7 @@ const Home = () => {
     //   fetchData();
     // }, [navigate]);
 
-    axios("http://localhost:3000/api/v1/books", {
+    axios("https://bookstore-backend-t7gr.onrender.com/api/v1/books", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
